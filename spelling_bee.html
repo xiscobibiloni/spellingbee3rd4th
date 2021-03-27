@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Speeling Bee </title>
+
+    <link href="https://www.csantantoniabat.com/templates/lt_school/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <link href="https://www.csantantoniabat.com/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-grey">
+      <img alt="Logo Sant Antoni Abat" width="10%" height="10%" src="https://www.csantantoniabat.com/images/logohorizontal2.png">
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">SPELLING BEE <img alt="Logo spelling bee" width="20%" height="20%" src="https://i.pinimg.com/originals/14/f8/42/14f842098f484101df01d856fbe5fc96.png"/></h1>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-3">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div>
+          <div class="col-md-3">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div>
+          <div class="col-md-3">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div>
+          <div class="col-md-3">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div>
+        </div>
+
+        <hr>
+
+
+
+        <input type="button" value="PLAY" onclick="play('angry')">
+
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <script>
+        const column1 = [{key:'1. ', value: 'angry'},{key:'2. ', value: 'animal shelter'},{key:'3. ', value: 'anniversary'},{key:'4. ', value: 'ash'},{key:'5. ', value: 'assignment'},{key:'6. ', value: 'astronaut'},{key:'7. ', value: 'backache'},{key:'8. ', value: 'bathing suit'},{key:'9. ', value: 'bear'},{key:'10.', value: 'began'},{key:'11.', value: 'better'},{key:'12.', value: 'blacksmith'},{key:'13.', value: 'blink'},{key:'14.', value: 'blushing'},{key:'15.', value: 'brag'},{key:'16.', value: 'breakfast'},{key:'17.', value: 'burrow'},{key:'18.', value: 'buy'},{key:'19.', value: 'called'},{key:'20.', value: 'capsule'},{key:'21.', value: 'card'},{key:'22.', value: 'cellular'},{key:'23.', value: 'chain'},{key:'24.', value: 'children'},{key:'25.', value: 'church'},{key:'26.', value: 'clutch'},{key:'27.', value: 'corner'},{key:'28.', value: 'cry'},{key:'29.', value: 'cunning'},{key:'30.', value: 'cupboard'},{key:'31.', value: 'curious'},{key:'32.', value: 'curly'},{key:'33.', value: 'daughter'},{key:'34.', value: 'dessert'},{key:'35.', value: 'dialogue'},{key:'36.', value: 'dining room'},{key:'37.', value: 'ears'},{key:'38.', value: 'eclipse'}]
+
+        function play(value) {
+            const audio = new Audio('https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + value);
+            audio.play();
+        }
+    </script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  </body>
+</html>
