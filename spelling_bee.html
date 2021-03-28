@@ -14,24 +14,23 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-grey">
-      <img alt="Logo Sant Antoni Abat" width="10%" height="10%" src="https://www.csantantoniabat.com/images/logohorizontal2.png">
+      <img alt="Logo Sant Antoni Abat" style="width: 15%" src="https://www.csantantoniabat.com/images/logohorizontal2.png">
     </nav>
 
     <main role="main">
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <!-- Title Container -->
       <div class="jumbotron">
         <div class="container">
-          <h1 class="display-3">SPELLING BEE <img alt="Logo spelling bee" width="20%" height="20%" src="https://i.pinimg.com/originals/14/f8/42/14f842098f484101df01d856fbe5fc96.png"/></h1>
+          <h1 class="display-3">SPELLING BEE <img alt="Logo spelling bee" style="width: 22%" src="https://i.pinimg.com/originals/14/f8/42/14f842098f484101df01d856fbe5fc96.png"/></h1>
           <h3 class="display-4">3rd and 4th graders (group 2)</h3>
         </div>
         <div></div>
       </div>
 
-      <hr>
-
+      <!-- Container -->
       <div class="container">
-        <!-- Example row of columns -->
+        <!-- Row -->
         <div class="row">
           <div class="col-md-3">
             <div id="column1" class="list-group"></div>
@@ -62,9 +61,13 @@
         const column3 = [{key:'77. ', value: 'menu'},{key:'78. ', value: 'moisture'},{key:'79. ', value: 'money'},{key:'80. ', value: 'motorcycle'},{key:'81. ', value: 'mucus'},{key:'82. ', value: 'near'},{key:'83. ', value: 'necessary'},{key:'84. ', value: 'neck'},{key:'85. ', value: 'next'},{key:'86. ', value: 'nobody'},{key:'87. ', value: 'notice'},{key:'88. ', value: 'nurse'},{key:'89. ', value: 'oatmeal'},{key:'90. ', value: 'obligation'},{key:'91. ', value: 'occasion'},{key:'92. ', value: 'often'},{key:'93. ', value: 'operator'},{key:'94. ', value: 'package'},{key:'95. ', value: 'palace'},{key:'96. ', value: 'photograph'},{key:'97. ', value: 'peek'},{key:'98. ', value: 'pie'},{key:'99. ', value: 'popcorn'},{key:'100. ', value: 'post'},{key:'101. ', value: 'practicing'},{key:'102. ', value: 'predict'},{key:'103. ', value: 'quickly'},{key:'104. ', value: 'raincoat'},{key:'105. ', value: 'recipe'},{key:'106. ', value: 'registration form'},{key:'107. ', value: 'remain'},{key:'108. ', value: 'restaurant'},{key:'109. ', value: 'rock'},{key:'110. ', value: 'rodent'},{key:'111. ', value: 'rumor'},{key:'112. ', value: 'runner'},{key:'113. ', value: 'salad'},{key:'114. ', value: 'scarf'}]
         const column4 = [{key:'115. ', value: 'seashore'}, {key:'116. ', value: 'season'},{key:'117. ', value: 'seatbelt'},{key:'118. ', value: 'seize'},{key:'119. ', value: 'sheepdog'},{key:'120. ', value: 'shopping'},{key:'121. ', value: 'slices'},{key:'122. ', value: 'slowly'},{key:'123. ', value: 'slept'},{key:'124. ', value: 'somersault'},{key:'125. ', value: 'startle'},{key:'126. ', value: 'stomachache'},{key:'127. ', value: 'store'},{key:'128. ', value: 'story'},{key:'129. ', value: 'street'},{key:'130. ', value: 'surface'},{key:'131. ', value: 'sweater'},{key:'132. ', value: 'tallest'},{key:'133. ', value: 'tea'},{key:'134. ', value: 'ten'},{key:'135. ', value: 'terrible'},{key:'136. ', value: 'thirsty'},{key:'137. ', value: 'tickle'},{key:'138. ', value: 'towel'},{key:'139. ', value: 'train'},{key:'140. ', value: 'triumph'},{key:'141. ', value: 'tuna'},{key:'142. ', value: 'upstairs'},{key:'143. ', value: 'useful'},{key:'144. ', value: 'videogame'},{key:'145. ', value: 'visor'},{key:'146. ', value: 'wake up'},{key:'147. ', value: 'weekend'},{key:'148. ', value: 'whiskers'},{key:'149. ', value: 'white'},{key:'150. ', value: 'wretched'}]
 
+        let audio;
+
         function play(value) {
-            const audio = new Audio('https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + value);
-            audio.play();
+            if (audio === undefined || audio.ended) {
+                audio = new Audio('https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + value);
+                audio.play();
+            }
         }
 
         $(document).ready(function(){
