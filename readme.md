@@ -16,9 +16,11 @@ This Code is for educational use and to practice the spelling bee of English wor
 ### PC
 
 * Download this code as zip ([link](https://github.com/xiscobibiloni/spellingbee3rd4th/archive/refs/heads/main.zip))
+* Unzip
 * Double-click in spelling_bee.html
 
 ### Ipad or Iphone
 
 * Download this code as zip ([link](https://github.com/xiscobibiloni/spellingbee3rd4th/archive/refs/heads/main.zip))
+* Unzip
 * Open spelling_bee.html with **"Documents APP"**
